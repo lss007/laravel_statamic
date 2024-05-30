@@ -1,0 +1,96 @@
+title: Blog
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        display: 'Add Blog'
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+          -
+            handle: content
+            field:
+              type: markdown
+              display: Content
+              localizable: true
+              buttons:
+                - bold
+                - italic
+                - unorderedlist
+                - orderedlist
+                - quote
+                - link
+                - image
+                - table
+                - strikethrough
+                - asset
+                - code
+                - codeblock
+          -
+            handle: template
+            field:
+              type: template
+              display: Template
+              localizable: true
+          -
+            handle: image
+            field:
+              max_files: 1
+              container: assets
+              type: assets
+              display: Image
+          -
+            handle: author
+            field:
+              type: users
+              display: Author
+              default: current
+              localizable: true
+              max_items: 1
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'
+          -
+            handle: date
+            field:
+              type: date
+              required: true
+              default: now
+              validate:
+                - required
+  meta:
+    display: Meta
+    sections:
+      -
+        display: Meta
+        instructions: 'For Seo'
+        fields:
+          -
+            handle: meta_title
+            field:
+              character_limit: 60
+              type: text
+              display: 'Meta Title'
+          -
+            handle: meta_description
+            field:
+              character_limit: '160'
+              type: textarea
+              display: 'Meta Description'
+              instructions: 'Max Character should be  160'
+      -
+        display: 'New Section'

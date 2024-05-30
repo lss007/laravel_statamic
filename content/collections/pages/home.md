@@ -1,10 +1,15 @@
 ---
-title: Home
 id: home
-template: home
 blueprint: pages
+title: Home
+template: home
+author: f838babc-10da-44c6-bd2c-c28d8a011f8b
+updated_by: f838babc-10da-44c6-bd2c-c28d8a011f8b
+updated_at: 1717047822
 ---
+## Welcome !
 ## Welcome to your brand new Statamic site!
+
 
 Not sure where to do next? Here are a few ideas, but feel free to explore in your own way, in your own time.
 

@@ -1,4 +1,18 @@
 name: Admin
 super: true
+avatar: 1_6.jpg
 id: f838babc-10da-44c6-bd2c-c28d8a011f8b
 password_hash: $2y$12$Ik828RT8zPYAlroYvDeEFuVcTefX8tOOJHxEvjSxI9VqbYG5KIuHG
+preferences:
+  collections:
+    blog:
+      columns:
+        - image
+        - title
+        - date
+        - status
+        - author
+        - template
+  assets:
+    assets:
+      mode: grid
