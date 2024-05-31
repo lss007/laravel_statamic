@@ -2,3 +2,9 @@ title: Footer
 data:
   email: Johndev@yopmail.com
   address: 'Xyz Street USA'
+  copyright: Myblog.com
+  flair: 'Made with ❤️ by humans'
+  disclaimer: 'This website is provided as is without any guarantees or warranty. In association with the product, [Your Blog Name] makes no warranties of any kind, either express or implied, including but not limited to warranties of merchantability, fitness for a particular purpose, of title, or of noninfringement of third-party rights'
+  contact_information: |-
+    - Phone: (123) 456-7890
+    - Fax: (123) 456-7891

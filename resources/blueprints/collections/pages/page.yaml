@@ -18,6 +18,21 @@ tabs:
               type: markdown
               display: Content
               localizable: true
+              container: assets
+              buttons:
+                - bold
+                - italic
+                - unorderedlist
+                - orderedlist
+                - quote
+                - link
+                - image
+                - table
+                - strikethrough
+                - asset
+                - code
+                - codeblock
+              automatic_links: true
           -
             handle: author
             field:
@@ -32,6 +47,13 @@ tabs:
               type: template
               display: Template
               localizable: true
+          -
+            handle: image
+            field:
+              max_files: 1
+              container: assets
+              type: assets
+              display: Image
   sidebar:
     display: Sidebar
     sections:

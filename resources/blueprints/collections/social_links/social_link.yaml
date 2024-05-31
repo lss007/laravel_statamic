@@ -1,0 +1,40 @@
+title: 'Social Link'
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+              display: Name
+          -
+            handle: icon
+            field:
+              placeholder: 'fab fa-facebook'
+              default: 'fab fa-facebook'
+              type: text
+              display: Icon
+              instructions: 'Fa fa icon'
+          -
+            handle: link
+            field:
+              type: link
+              display: Link
+              instructions: 'Add here social account link'
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'

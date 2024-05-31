@@ -53,6 +53,12 @@ tabs:
               default: current
               localizable: true
               max_items: 1
+          -
+            handle: related_posts
+            field:
+              max_items: 3
+              type: entries
+              display: 'Related Posts'
   sidebar:
     display: Sidebar
     sections:

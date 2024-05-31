@@ -5,7 +5,9 @@ title: Home
 template: home
 author: f838babc-10da-44c6-bd2c-c28d8a011f8b
 updated_by: f838babc-10da-44c6-bd2c-c28d8a011f8b
-updated_at: 1717047822
+updated_at: 1717149335
+image: ricoh-rdc5300.jpg
+date: '2024-05-31'
 ---
 ## Welcome !
 ## Welcome to your brand new Statamic site!

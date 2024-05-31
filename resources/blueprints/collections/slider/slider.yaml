@@ -1,0 +1,38 @@
+title: Slider
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+          -
+            handle: images
+            field:
+              max_files: 10
+              container: assets
+              type: assets
+              display: Images
+              instructions: 'Bottom slider'
+          -
+            handle: active
+            field:
+              type: toggle
+              display: Active
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'

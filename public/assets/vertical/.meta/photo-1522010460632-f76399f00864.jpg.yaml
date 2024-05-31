@@ -1,4 +1,5 @@
-data: {  }
+data:
+  alt: slider1
 size: 7171
 last_modified: 1717063819
 width: 150

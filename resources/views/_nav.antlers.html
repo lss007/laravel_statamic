@@ -17,18 +17,12 @@
             </nav>
 
             <div class="flex items-center text-lg no-underline text-white pr-6">
-                <a class="" href="#">
-                    <i class="fab fa-facebook"></i>
+            
+                {{ collection:social_links }}
+                <a class="{{ if not first }}pl-6{{ /if }}" href="#">
+                    <i class="{{icon}}"></i>
                 </a>
-                <a class="pl-6" href="#">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a class="pl-6" href="#">
-                    <i class="fab fa-twitter"></i>
-                </a>
-                <a class="pl-6" href="#">
-                    <i class="fab fa-linkedin"></i>
-                </a>
+                {{ /collection:social_links }}
             </div>
         </div>
 
@@ -37,10 +31,11 @@
     <header class="w-full container mx-auto">
         <div class="flex flex-col items-center py-12">
             <a class="font-bold text-gray-800 uppercase hover:text-gray-700 text-5xl" href="#">
-                Minimal Blog
+                {{ header:sitename }}
             </a>
             <p class="text-lg text-gray-600">
-                Lorem Ipsum Dolor Sit Amet
+                {{ header:title }}
+
             </p>
             {{ if success }}
                 <div class="bg-green-300 text-white p-2">
@@ -62,7 +57,7 @@
         <div :class="open ? 'block': 'hidden'" class="w-full flex-grow sm:flex sm:items-center sm:w-auto">
             <div class="w-full container mx-auto flex flex-col sm:flex-row items-center justify-center text-sm font-bold uppercase mt-0 px-6 py-2">
                 {{ nav:collection:pages :from="segment_1" }}
-                        <a href="{{ url }}" class="hover:bg-gray-400 rounded py-2 px-4 mx-2 {{ if is_current }} bg-gray-400 {{ /if }}"  >{{ title }}</a>
+                       {{emoji}}  <a href="{{ url }}" class="hover:bg-gray-400 rounded py-2 px-4 mx-2 {{ if is_current }} bg-gray-400 {{ /if }}"    >{{ title }}   </a> {{emoji}}
                 {{ /nav:collection:pages }}
    
             </div>

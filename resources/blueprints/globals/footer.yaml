@@ -14,3 +14,35 @@ tabs:
             field:
               type: textarea
               display: Address
+          -
+            handle: copyright
+            field:
+              type: text
+              display: Copyright
+          -
+            handle: flair
+            field:
+              type: text
+              display: Flair
+          -
+            handle: disclaimer
+            field:
+              type: textarea
+              display: Disclaimer
+          -
+            handle: contact_information
+            field:
+              type: markdown
+              display: 'Contact Information'
+              buttons:
+                - bold
+                - italic
+                - unorderedlist
+                - orderedlist
+                - quote
+                - link
+                - image
+                - table
+                - strikethrough
+                - code
+                - codeblock

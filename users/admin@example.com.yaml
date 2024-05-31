@@ -1,7 +1,7 @@
 name: Admin
 super: true
 avatar: 1_6.jpg
-about: "Hi, I'm John Doe, a seasoned software engineer with over a decade of experience in web and mobile application development. I specialize in creating robust and scalable applications using the latest technologies. My passion for coding started in high school and has only grown stronger over the years. I hold a degree in Computer Science from XYZ University and have worked with numerous clients across various industries. When I'm not coding, I enjoy hiking, photography, and exploring new tech trends."
+about: "Hi, I'm John Doe, a seasoned software engineer with over a decade of experience in web and mobile application development. I specialize in creating robust and scalable applications using the latest technologies. My passion for coding started in high school and has only grown stronger over the years. When I'm not coding, I enjoy hiking, photography, and exploring new tech trends."
 id: f838babc-10da-44c6-bd2c-c28d8a011f8b
 password_hash: $2y$12$Ik828RT8zPYAlroYvDeEFuVcTefX8tOOJHxEvjSxI9VqbYG5KIuHG
 preferences:
@@ -14,6 +14,28 @@ preferences:
         - status
         - author
         - template
+    social_links:
+      after_save: create_another
+      columns:
+        - title
+        - slug
+        - icon
+        - status
+    slider:
+      columns:
+        - images
+        - title
+        - status
+        - active
+    pages:
+      after_save: continue_editing
   assets:
     assets:
       mode: grid
+  start_page: dashboard
+  favorites:
+    -
+      id: pLfnfTQP
+      name: Dashboard
+      url: dashboard
+  locale: en
